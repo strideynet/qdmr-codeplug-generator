@@ -1,0 +1,1133 @@
+---
+version: 0.12.0
+settings:
+  introLine1: NOAH
+  introLine2: M7NOA
+  micLevel: 7
+  speech: false
+  power: High
+  squelch: 2
+  vox: 0
+  tot: 0
+  defaultID: id1
+  anytone:
+    subChannel: false
+    selectedVFO: A
+    modeA: Memory
+    modeB: Memory
+    vfoScanType: Time
+    minVFOScanFrequencyUHF: 400 MHz
+    maxVFOScanFrequencyUHF: 480 MHz
+    minVFOScanFrequencyVHF: 136 MHz
+    maxVFOScanFrequencyVHF: 174 MHz
+    keepLastCaller: false
+    vfoStep: 20 kHz
+    steType: Off
+    steFrequency: 259.19999999999999
+    steDuration: 260 ms
+    tbstFrequency: 1750 Hz
+    proMode: false
+    maintainCallChannel: true
+    bootSettings:
+      bootDisplay: CustomText
+      bootPasswordEnabled: false
+      bootPassword: ""
+      defaultChannel: false
+      priorityZoneA: zone1
+      priorityZoneB: zone1
+      gpsCheck: false
+      reset: true
+    powerSaveSettings:
+      autoShutdown: 0
+      resetAutoShutdownOnCall: false
+      powerSave: Save50
+      atpc: true
+    keySettings:
+      funcKey1Short: ToggleMainChannel
+      funcKey1Long: SubChannel
+      funcKey2Short: ToggleVFO
+      funcKey2Long: Off
+      funcKey3Short: Power
+      funcKey3Long: Record
+      funcKey4Short: Repeater
+      funcKey4Long: SMS
+      funcKey5Short: Reverse
+      funcKey5Long: Dial
+      funcKey6Short: Encryption
+      funcKey6Long: Off
+      funcKeyAShort: Voltage
+      funcKeyALong: Off
+      funcKeyBShort: Monitor
+      funcKeyBLong: Call
+      funcKeyCShort: DMRMonitor
+      funcKeyCLong: Off
+      funcKeyDShort: Off
+      funcKeyDLong: Off
+      longPressDuration: 2 s
+      autoKeyLock: false
+      knobLock: true
+      keypadLock: true
+      sideKeysLock: true
+      forcedKeyLock: false
+    toneSettings:
+      keyTone: false
+      keyToneLevel: 0
+      smsAlert: true
+      callAlert: true
+      dmrTalkPermit: true
+      dmrReset: true
+      fmTalkPermit: false
+      dmrIdle: false
+      fmIdle: false
+      startup: false
+      tot: true
+      callMelody:
+        bpm: 100
+        melody: b'16 r b' r b'
+      idleMelody:
+        bpm: 100
+        melody: b''16 r b'' r b''
+      resetMelody:
+        bpm: 100
+        melody: fis'''16 r fis''' r fis'''
+      callEndMelody:
+        bpm: 100
+        melody: fis'''16 r fis''' r fis'''
+    displaySettings:
+      displayFrequency: false
+      brightness: 7
+      backlightDuration: 10 s
+      backlightDurationTX: 0
+      backlightDurationRX: 0
+      customChannelBackground: false
+      volumeChangePrompt: false
+      callEndPrompt: false
+      showClock: false
+      showCall: false
+      showContact: false
+      showChannelNumber: false
+      showColorCode: true
+      showTimeSlot: true
+      showChannelType: true
+      showLastHeard: true
+      lastCallerDisplay: Call
+      callColor: White
+      standbyTextColor: White
+      standbyBackgroundColor: Black
+      channelNameColor: Green
+      channelBNameColor: Green
+      zoneNameColor: Orange
+      zoneBNameColor: Orange
+      language: English
+      dateFormat: YearFirst
+    audioSettings:
+      voxDelay: 0
+      voxSource: Both
+      recording: false
+      enhance: false
+      muteDelay: 1 min
+      maxVolume: 10
+      maxHeadPhoneVolume: 3
+      enableFMMicGain: true
+      fmMicGain: 6
+    menuSettings:
+      duration: 15 s
+      separator: true
+    autoRepeaterSettings:
+      directionA: Off
+      directionB: Off
+      vhfMin: 136 MHz
+      vhfMax: 174 MHz
+      uhfMin: 400 MHz
+      uhfMax: 480 MHz
+      vhf2Min: 136 MHz
+      vhf2Max: 174 MHz
+      uhf2Min: 400 MHz
+      uhf2Max: 480 MHz
+      offsets:
+        []
+    dmrSettings:
+      groupCallHangTime: 1 s
+      manualGroupCallHangTime: 6 s
+      privateCallHangTime: 1 s
+      manualPrivateCallHangTime: 6 s
+      preWaveDelay: 100 ms
+      wakeHeadPeriod: 100 ms
+      filterOwnID: false
+      monitorSlotMatch: Off
+      monitorColorCodeMatch: false
+      monitorIDMatch: false
+      monitorTimeSlotHold: false
+      smsFormat: Motorola
+      sendTalkerAlias: false
+      talkerAliasSource: Off
+      talkerAliasEncoding: ISO8
+      encryption: AES
+    gpsSettings:
+      units: Metric
+      timeZone: UTC
+      reportPosition: false
+      updatePeriod: 5 s
+      mode: GPS
+    roamingSettings:
+      autoRoam: false
+      autoRoamPeriod: 0
+      autoRoamDelay: 0
+      roamStart: Periodic
+      roamReturn: Periodic
+      rangeCheck: false
+      checkInterval: 0
+      retryCount: 0
+      outOfRangeAlert: None
+      notification: false
+      notificationCount: 0
+      gpsRoaming: false
+    bluetoothSettings:
+      pttLatch: false
+      pttSleepTimer: 1 min
+    simplexRepeaterSettings:
+      enabled: false
+      monitor: false
+      timeSlot: Channel
+radioIDs:
+  - dmr: {id: id1, name: M7NOA, number: 2355951}
+contacts:
+  - dmr: {id: cont1, name: B9990 PARROT, ring: false, type: PrivateCall, number: 9990, anytone: {alertType: None}}
+  - dmr: {id: cont2, name: B2350 UK CALL, ring: false, type: GroupCall, number: 2350, anytone: {alertType: None}}
+  - dmr: {id: cont3, name: B91 WORLD CALL, ring: false, type: GroupCall, number: 91, anytone: {alertType: None}}
+  - dmr: {id: cont4, name: P1 WORLD CALL, ring: false, type: GroupCall, number: 1, anytone: {alertType: None}}
+  - dmr: {id: cont5, name: P2 EU CALL, ring: false, type: GroupCall, number: 2, anytone: {alertType: None}}
+  - dmr: {id: cont6, name: P235 UK CALL, ring: false, type: GroupCall, number: 235, anytone: {alertType: None}}
+  - dmr: {id: cont7, name: B2348479 OARC, ring: false, type: GroupCall, number: 2348479, anytone: {alertType: None}}
+  - dmr: {id: cont8, name: DISCONNECT, ring: false, type: GroupCall, number: 4000, anytone: {alertType: None}}
+groupLists:
+  []
+channels:
+  - digital:
+      id: ch1
+      name: GB7HH-B2350-UK
+      rxOnly: false
+      admit: Always
+      colorCode: 3
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont2
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 439.75 MHz
+      txFrequency: 430.75 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch2
+      name: GB7HH-B91-WORLD
+      rxOnly: false
+      admit: Always
+      colorCode: 3
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont3
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 439.75 MHz
+      txFrequency: 430.75 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch3
+      name: GB7HH-PARROT
+      rxOnly: false
+      admit: Always
+      colorCode: 3
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont1
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 439.75 MHz
+      txFrequency: 430.75 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch4
+      name: GB7HH-P235-UK
+      rxOnly: false
+      admit: Always
+      colorCode: 3
+      timeSlot: TS1
+      radioId: !<!default> ""
+      contact: cont6
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 439.75 MHz
+      txFrequency: 430.75 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch5
+      name: GB7HH-P1-WORLD
+      rxOnly: false
+      admit: Always
+      colorCode: 3
+      timeSlot: TS1
+      radioId: !<!default> ""
+      contact: cont4
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 439.75 MHz
+      txFrequency: 430.75 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - analog:
+      id: ch6
+      name: V16
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.2 MHz
+      txFrequency: 145.2 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch7
+      name: V17
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.2125 MHz
+      txFrequency: 145.2125 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch8
+      name: V18
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.225 MHz
+      txFrequency: 145.225 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch9
+      name: V19
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.2375 MHz
+      txFrequency: 145.2375 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch10
+      name: V20
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.25 MHz
+      txFrequency: 145.25 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch11
+      name: V40-CALL
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.5 MHz
+      txFrequency: 145.5 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch12
+      name: U272
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.4 MHz
+      txFrequency: 433.4 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch13
+      name: U274
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.425 MHz
+      txFrequency: 433.425 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch14
+      name: U276
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.45 MHz
+      txFrequency: 433.45 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch15
+      name: U278
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.475 MHz
+      txFrequency: 433.475 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch16
+      name: U280-CALL
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.5 MHz
+      txFrequency: 433.5 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch17
+      name: U282
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.525 MHz
+      txFrequency: 433.525 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch18
+      name: U284
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.55 MHz
+      txFrequency: 433.55 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch19
+      name: U286
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.575 MHz
+      txFrequency: 433.575 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch20
+      name: V-LONDON-GB3EL
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 145.6 MHz
+      txFrequency: 145 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch21
+      name: U-LONDON-GB3OY
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 430.95 MHz
+      txFrequency: 438.55 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      txTone: {ctcss: 82.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch22
+      name: U-LONDON-GB3NK
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.1 MHz
+      txFrequency: 434.7 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch23
+      name: U-CTRHAM-GB3NS
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 439.675 MHz
+      txFrequency: 430.675 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      txTone: {ctcss: 82.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch24
+      name: U-TRING-GB3TU
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 433.225 MHz
+      txFrequency: 434.825 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      txTone: {ctcss: 77}
+      squelch: !<!default> ""
+  - analog:
+      id: ch25
+      name: PMR446-1
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.00625 MHz
+      txFrequency: 446.00625 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch26
+      name: PMR446-2
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.01875 MHz
+      txFrequency: 446.01875 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch27
+      name: PMR446-3
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.03125 MHz
+      txFrequency: 446.03125 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch28
+      name: PMR446-4
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.04375 MHz
+      txFrequency: 446.04375 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch29
+      name: PMR446-5
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.05625 MHz
+      txFrequency: 446.05625 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch30
+      name: PMR446-6
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.06875 MHz
+      txFrequency: 446.06875 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch31
+      name: PMR446-7
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.08125 MHz
+      txFrequency: 446.08125 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch32
+      name: PMR446-8
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        reverseBurst: false
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scrambler: false
+      rxFrequency: 446.09375 MHz
+      txFrequency: 446.09375 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - digital:
+      id: ch33
+      name: OARC
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont7
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 434.45 MHz
+      txFrequency: 439.45 MHz
+      power: Mid
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch34
+      name: PARROT
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      contact: cont1
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 434.45 MHz
+      txFrequency: 439.45 MHz
+      power: Mid
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch35
+      name: WORLD
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      contact: cont3
+      roaming: !<!default> ""
+      anytone:
+        talkaround: false
+        frequencyCorrection: 0
+        handsFree: false
+        callConfirm: false
+        sms: true
+        smsConfirm: false
+        dataACK: true
+        simplexTDMA: false
+        adaptiveTDMA: false
+        loneWorker: false
+        throughMode: false
+      rxFrequency: 434.45 MHz
+      txFrequency: 439.45 MHz
+      power: Mid
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - analog:
+      id: ch36
+      name: APRS Channel
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      rxFrequency: 144.8 MHz
+      txFrequency: 144.8 MHz
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+zones:
+  - id: zone1
+    name: D-LONDON-GB7HH
+    A: [ch1, ch2, ch3, ch4, ch5]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone2
+    name: A-VHF-SIMPLEX
+    A: [ch6, ch7, ch8, ch9, ch10, ch11]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone3
+    name: A-UHF-SIMPLEX
+    A: [ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone4
+    name: A-REPEATER
+    A: [ch20, ch21, ch22, ch23, ch24]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone5
+    name: A-PMR446
+    A: [ch25, ch26, ch27, ch28, ch29, ch30, ch31, ch32]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone6
+    name: HOT
+    A: [ch33, ch34, ch35]
+    B: []
+    anytone:
+      hidden: false
+positioning:
+  - aprs:
+      id: aprs1
+      name: APRS APAT81
+      period: 0
+      revert: ch36
+      icon: HFGateway
+      message: Noah / Anytone 878
+      anytone:
+        txDelay: 600 ms
+        preWaveDelay: 600 ms
+        passAll: false
+        reportPosition: true
+        reportMicE: true
+        reportObject: true
+        reportItem: true
+        reportMessage: true
+        reportWeather: true
+        reportNMEA: false
+        reportStatus: false
+        reportOther: false
+        frequencies:
+          - id: af1
+            name: APRS 1
+            frequency: 144.8 MHz
+          - id: af2
+            name: APRS 2
+            frequency: 144.8 MHz
+          - id: af3
+            name: APRS 3
+            frequency: 144.8 MHz
+          - id: af4
+            name: APRS 4
+            frequency: 144.8 MHz
+          - id: af5
+            name: APRS 5
+            frequency: 144.8 MHz
+          - id: af6
+            name: APRS 6
+            frequency: 144.8 MHz
+          - id: af7
+            name: APRS 7
+            frequency: 144.8 MHz
+      destination: APAT81-0
+      source: M7NOA-7
+      path: [WIDE1-1]
+roamingChannels:
+  - id: rch1
+    name: Roam Channel 1
+    rxFrequency: 440 MHz
+    txFrequency: 439.9 MHz
+    timeSlot: TS1
+roamingZones:
+  - id: roam1
+    name: Roam Zone 1
+    channels:
+      - rch1
+commercial:
+  encryptionKeys:
+    []
+sms:
+  format: DMR
+  templates:
+    []
+...

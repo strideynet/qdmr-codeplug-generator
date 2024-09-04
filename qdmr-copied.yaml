@@ -1,0 +1,695 @@
+---
+version: 0.12.0
+settings:
+  introLine1: NOAH
+  introLine2: M7NOA
+  micLevel: 7
+  speech: false
+  power: High
+  squelch: 2
+  vox: 0
+  tot: 0
+  defaultID: id1
+  anytone:
+    subChannel: false
+    selectedVFO: A
+    modeA: Memory
+    modeB: Memory
+    vfoScanType: Time
+    minVFOScanFrequencyUHF: 400 MHz
+    maxVFOScanFrequencyUHF: 480 MHz
+    minVFOScanFrequencyVHF: 136 MHz
+    maxVFOScanFrequencyVHF: 174 MHz
+    keepLastCaller: false
+    vfoStep: 20 kHz
+    steType: Off
+    steFrequency: 259.19999999999999
+    steDuration: 260 ms
+    tbstFrequency: 1750 Hz
+    proMode: false
+    maintainCallChannel: true
+    bootSettings:
+      bootDisplay: CustomText
+      bootPasswordEnabled: false
+      bootPassword: ""
+      defaultChannel: false
+      priorityZoneA: gen9
+      priorityZoneB: gen9
+      gpsCheck: false
+      reset: true
+    powerSaveSettings:
+      autoShutdown: 0
+      resetAutoShutdownOnCall: false
+      powerSave: Save50
+      atpc: true
+    keySettings:
+      funcKey1Short: ToggleMainChannel
+      funcKey1Long: SubChannel
+      funcKey2Short: ToggleVFO
+      funcKey2Long: Off
+      funcKey3Short: Power
+      funcKey3Long: Record
+      funcKey4Short: Repeater
+      funcKey4Long: SMS
+      funcKey5Short: Reverse
+      funcKey5Long: Dial
+      funcKey6Short: Encryption
+      funcKey6Long: Off
+      funcKeyAShort: Voltage
+      funcKeyALong: Off
+      funcKeyBShort: Monitor
+      funcKeyBLong: Call
+      funcKeyCShort: DMRMonitor
+      funcKeyCLong: Off
+      funcKeyDShort: Off
+      funcKeyDLong: Off
+      longPressDuration: 2 s
+      autoKeyLock: false
+      knobLock: true
+      keypadLock: true
+      sideKeysLock: true
+      forcedKeyLock: false
+    toneSettings:
+      keyTone: false
+      keyToneLevel: 0
+      smsAlert: true
+      callAlert: true
+      dmrTalkPermit: true
+      dmrReset: true
+      fmTalkPermit: false
+      dmrIdle: false
+      fmIdle: false
+      startup: false
+      tot: true
+      callMelody:
+        bpm: 100
+        melody: b'16 r b' r b'
+      idleMelody:
+        bpm: 100
+        melody: b''16 r b'' r b''
+      resetMelody:
+        bpm: 100
+        melody: fis'''16 r fis''' r fis'''
+      callEndMelody:
+        bpm: 100
+        melody: fis'''16 r fis''' r fis'''
+    displaySettings:
+      displayFrequency: false
+      brightness: 7
+      backlightDuration: 10 s
+      backlightDurationTX: 0
+      backlightDurationRX: 0
+      customChannelBackground: false
+      volumeChangePrompt: false
+      callEndPrompt: false
+      showClock: false
+      showCall: false
+      showContact: false
+      showChannelNumber: false
+      showColorCode: true
+      showTimeSlot: true
+      showChannelType: true
+      showLastHeard: true
+      lastCallerDisplay: Call
+      callColor: White
+      standbyTextColor: White
+      standbyBackgroundColor: Black
+      channelNameColor: Green
+      channelBNameColor: Green
+      zoneNameColor: Orange
+      zoneBNameColor: Orange
+      language: English
+      dateFormat: YearFirst
+    audioSettings:
+      voxDelay: 0
+      voxSource: Both
+      recording: false
+      enhance: false
+      muteDelay: 1 min
+      maxVolume: 10
+      maxHeadPhoneVolume: 3
+      enableFMMicGain: true
+      fmMicGain: 6
+    menuSettings:
+      duration: 15 s
+      separator: true
+    autoRepeaterSettings:
+      directionA: Off
+      directionB: Off
+      vhfMin: 136 MHz
+      vhfMax: 174 MHz
+      uhfMin: 400 MHz
+      uhfMax: 480 MHz
+      vhf2Min: 136 MHz
+      vhf2Max: 174 MHz
+      uhf2Min: 400 MHz
+      uhf2Max: 480 MHz
+      offsets:
+        []
+    dmrSettings:
+      groupCallHangTime: 1 s
+      manualGroupCallHangTime: 6 s
+      privateCallHangTime: 1 s
+      manualPrivateCallHangTime: 6 s
+      preWaveDelay: 100 ms
+      wakeHeadPeriod: 100 ms
+      filterOwnID: false
+      monitorSlotMatch: Off
+      monitorColorCodeMatch: false
+      monitorIDMatch: false
+      monitorTimeSlotHold: false
+      smsFormat: Motorola
+      sendTalkerAlias: false
+      talkerAliasSource: Off
+      talkerAliasEncoding: ISO8
+      encryption: AES
+    gpsSettings:
+      units: Metric
+      timeZone: UTC
+      reportPosition: false
+      updatePeriod: 5 s
+      mode: GPS
+    roamingSettings:
+      autoRoam: false
+      autoRoamPeriod: 0
+      autoRoamDelay: 0
+      roamStart: Periodic
+      roamReturn: Periodic
+      rangeCheck: false
+      checkInterval: 0
+      retryCount: 0
+      outOfRangeAlert: None
+      notification: false
+      notificationCount: 0
+      gpsRoaming: false
+    bluetoothSettings:
+      pttLatch: false
+      pttSleepTimer: 1 min
+    simplexRepeaterSettings:
+      enabled: false
+      monitor: false
+      timeSlot: Channel
+radioIDs:
+  - dmr: {id: id1, name: M7NOA, number: 2355951}
+contacts:
+  - dmr:
+      id: gen0
+      name: B9990 PARROT
+      number: 9990
+      ring: false
+      type: PrivateCall
+  - dmr:
+      id: gen1
+      name: B2348479 OARC
+      number: 2348479
+      ring: false
+      type: GroupCall
+  - dmr:
+      id: gen2
+      name: B91 WORLD
+      number: 91
+      ring: false
+      type: GroupCall
+  - dmr:
+      id: gen3
+      name: DISCONNECT
+      number: 4000
+      ring: false
+      type: PrivateCall
+  - dmr:
+      id: gen4
+      name: P1 WORLD
+      number: 1
+      ring: false
+      type: GroupCall
+groupLists:
+  []
+channels:
+  - digital:
+      id: gen5
+      name: B9990 PARROT
+      power: Mid
+      rxFrequency: 434.45 Mhz
+      txFrequency: 439.45 Mhz
+      timeSlot: TS1
+      colorCode: 1
+      contact: gen0
+  - digital:
+      id: gen6
+      name: B91 WORLD
+      power: Mid
+      rxFrequency: 434.45 Mhz
+      txFrequency: 439.45 Mhz
+      timeSlot: TS1
+      colorCode: 1
+      contact: gen2
+  - digital:
+      id: gen7
+      name: DISCONNECT
+      power: Mid
+      rxFrequency: 434.45 Mhz
+      txFrequency: 439.45 Mhz
+      timeSlot: TS1
+      colorCode: 1
+      contact: gen3
+  - digital:
+      id: gen8
+      name: B2348479 OARC
+      power: Mid
+      rxFrequency: 434.45 Mhz
+      txFrequency: 439.45 Mhz
+      timeSlot: TS2
+      colorCode: 1
+      contact: gen1
+  - digital:
+      id: gen10
+      name: P1 WORLD
+      power: Max
+      rxFrequency: 439.75 Mhz
+      txFrequency: 430.75 Mhz
+      timeSlot: TS1
+      colorCode: 3
+      contact: gen4
+  - digital:
+      id: gen11
+      name: B9990 PARROT
+      power: Max
+      rxFrequency: 439.75 Mhz
+      txFrequency: 430.75 Mhz
+      timeSlot: TS2
+      colorCode: 3
+      contact: gen0
+  - digital:
+      id: gen12
+      name: DISCONNECT
+      power: Max
+      rxFrequency: 439.75 Mhz
+      txFrequency: 430.75 Mhz
+      timeSlot: TS2
+      colorCode: 3
+      contact: gen3
+  - analog:
+      id: gen14
+      name: V40* 145.500
+      rxFrequency: 145.500 Mhz
+      txFrequency: 145.500 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen15
+      name: V16 145.200
+      rxFrequency: 145.200 Mhz
+      txFrequency: 145.200 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen16
+      name: V17 145.2125
+      rxFrequency: 145.2125 Mhz
+      txFrequency: 145.2125 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen17
+      name: V18 145.225
+      rxFrequency: 145.225 Mhz
+      txFrequency: 145.225 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen18
+      name: V19 145.2375
+      rxFrequency: 145.2375 Mhz
+      txFrequency: 145.2375 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen19
+      name: V20 145.250
+      rxFrequency: 145.250 Mhz
+      txFrequency: 145.250 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen20
+      name: V21 145.2625
+      rxFrequency: 145.2625 Mhz
+      txFrequency: 145.2625 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen21
+      name: V22 145.275
+      rxFrequency: 145.275 Mhz
+      txFrequency: 145.275 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen22
+      name: V23 145.2875
+      rxFrequency: 145.2875 Mhz
+      txFrequency: 145.2875 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen23
+      name: V24 145.300
+      rxFrequency: 145.300 Mhz
+      txFrequency: 145.300 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen24
+      name: V25 145.3125
+      rxFrequency: 145.3125 Mhz
+      txFrequency: 145.3125 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen25
+      name: V26 145.325
+      rxFrequency: 145.325 Mhz
+      txFrequency: 145.325 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen26
+      name: V27 145.3375
+      rxFrequency: 145.3375 Mhz
+      txFrequency: 145.3375 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen27
+      name: V28 145.350
+      rxFrequency: 145.350 Mhz
+      txFrequency: 145.350 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen28
+      name: V29 145.3625
+      rxFrequency: 145.3625 Mhz
+      txFrequency: 145.3625 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen29
+      name: V30 145.375
+      rxFrequency: 145.375 Mhz
+      txFrequency: 145.375 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen30
+      name: V31 145.3875
+      rxFrequency: 145.3875 Mhz
+      txFrequency: 145.3875 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen31
+      name: V32 145.400
+      rxFrequency: 145.400 Mhz
+      txFrequency: 145.400 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen32
+      name: V33 145.4125
+      rxFrequency: 145.4125 Mhz
+      txFrequency: 145.4125 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen33
+      name: V34 145.425
+      rxFrequency: 145.425 Mhz
+      txFrequency: 145.425 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen34
+      name: V35 145.4375
+      rxFrequency: 145.4375 Mhz
+      txFrequency: 145.4375 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen35
+      name: V36 145.450
+      rxFrequency: 145.450 Mhz
+      txFrequency: 145.450 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen36
+      name: V37 145.4625
+      rxFrequency: 145.4625 Mhz
+      txFrequency: 145.4625 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen37
+      name: V38 145.475
+      rxFrequency: 145.475 Mhz
+      txFrequency: 145.475 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen38
+      name: V39 145.4875
+      rxFrequency: 145.4875 Mhz
+      txFrequency: 145.4875 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen39
+      name: V41 145.5125
+      rxFrequency: 145.5125 Mhz
+      txFrequency: 145.5125 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen40
+      name: V42 145.525
+      rxFrequency: 145.525 Mhz
+      txFrequency: 145.525 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen41
+      name: V43 145.5375
+      rxFrequency: 145.5375 Mhz
+      txFrequency: 145.5375 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen42
+      name: V44 145.550
+      rxFrequency: 145.550 Mhz
+      txFrequency: 145.550 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen43
+      name: V45 145.5625
+      rxFrequency: 145.5625 Mhz
+      txFrequency: 145.5625 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen44
+      name: V46 145.575
+      rxFrequency: 145.575 Mhz
+      txFrequency: 145.575 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen45
+      name: V47 145.5875
+      rxFrequency: 145.5875 Mhz
+      txFrequency: 145.5875 Mhz
+      power: Max
+      bandwidth: Narrow
+  - analog:
+      id: gen47
+      name: U280* 433.500
+      rxFrequency: 433.500 Mhz
+      txFrequency: 433.500 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen48
+      name: U272 433.400
+      rxFrequency: 433.400 Mhz
+      txFrequency: 433.400 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen49
+      name: U273 433.4125
+      rxFrequency: 433.4125 Mhz
+      txFrequency: 433.4125 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen50
+      name: U274 433.425
+      rxFrequency: 433.425 Mhz
+      txFrequency: 433.425 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen51
+      name: U275 433.4375
+      rxFrequency: 433.4375 Mhz
+      txFrequency: 433.4375 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen52
+      name: U276 433.450
+      rxFrequency: 433.450 Mhz
+      txFrequency: 433.450 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen53
+      name: U277 433.4625
+      rxFrequency: 433.4625 Mhz
+      txFrequency: 433.4625 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen54
+      name: U278 433.475
+      rxFrequency: 433.475 Mhz
+      txFrequency: 433.475 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen55
+      name: U279 433.4875
+      rxFrequency: 433.4875 Mhz
+      txFrequency: 433.4875 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen56
+      name: U281 433.5125
+      rxFrequency: 433.5125 Mhz
+      txFrequency: 433.5125 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen57
+      name: U282 433.525
+      rxFrequency: 433.525 Mhz
+      txFrequency: 433.525 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen58
+      name: U283 433.5375
+      rxFrequency: 433.5375 Mhz
+      txFrequency: 433.5375 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen59
+      name: U284 433.550
+      rxFrequency: 433.550 Mhz
+      txFrequency: 433.550 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen60
+      name: U285 433.5625
+      rxFrequency: 433.5625 Mhz
+      txFrequency: 433.5625 Mhz
+      power: Max
+      bandwidth: Wide
+  - analog:
+      id: gen61
+      name: U286 433.575
+      rxFrequency: 433.575 Mhz
+      txFrequency: 433.575 Mhz
+      power: Max
+      bandwidth: Wide
+zones:
+  - id: gen9
+    name: D HOTSPOT
+    A:
+      - gen5
+      - gen6
+      - gen7
+      - gen8
+    B: []
+  - id: gen13
+    name: D LONDON GB7HH
+    A:
+      - gen10
+      - gen11
+      - gen12
+    B: []
+  - id: gen46
+    name: A VHF SIMPLEX
+    A:
+      - gen14
+      - gen15
+      - gen16
+      - gen17
+      - gen18
+      - gen19
+      - gen20
+      - gen21
+      - gen22
+      - gen23
+      - gen24
+      - gen25
+      - gen26
+      - gen27
+      - gen28
+      - gen29
+      - gen30
+      - gen31
+      - gen32
+      - gen33
+      - gen34
+      - gen35
+      - gen36
+      - gen37
+      - gen38
+      - gen39
+      - gen40
+      - gen41
+      - gen42
+      - gen43
+      - gen44
+      - gen45
+    B: []
+  - id: gen62
+    name: A UHF SIMPLEX
+    A:
+      - gen47
+      - gen48
+      - gen49
+      - gen50
+      - gen51
+      - gen52
+      - gen53
+      - gen54
+      - gen55
+      - gen56
+      - gen57
+      - gen58
+      - gen59
+      - gen60
+      - gen61
+    B: []
+sms:
+  format: DMR
+  templates:
+    []
+...
